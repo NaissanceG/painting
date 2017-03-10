@@ -13,3 +13,27 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+#styling {
+  display: block;
+  padding: 15px 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  background-color: #0275d8;
+}
+
+.collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+}
+
+.nav li {
+    position: relative;
+    display: block;
+}
+
+#imgstyl {
+  text-align: center;
+}

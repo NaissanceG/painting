@@ -1,0 +1,13 @@
+<%= render 'painting', painting: @painting %>
+<hr>
+<% if @painting.user.id == current_user.id or current_user.painter == true %>
+  <div class="text-center edit-links">
+    <%= link_to "Cancel", paintings_path %> |
+    <%= link_to "Edit Post", edit_painting_path(@painting) %> |
+    <%= link_to "Delete Post", painting_path(@painting), :data => {:confirm => "Are you Sure?", :method => 'delete'} %>
+  <% else %>
+  <div class="text-center edit-links">
+    <%= link_to "Cancel", paintings_path %>
+  </div>
+  <% end %>
+  </div>
